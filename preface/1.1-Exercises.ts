@@ -1,4 +1,4 @@
-// 1.1 Insertion sort
+// 1.1-1 Insertion sort
 
 function insertionSort(arr: number[]) {
   for (let j = 1; j <= arr.length - 1; j++) {
@@ -18,7 +18,7 @@ function insertionSort(arr: number[]) {
 
 console.log(insertionSort([5, 2, 4, 6, 1, 3]));
 
-// 1.2 Rewrite insertion sort procedure to sort into nonincreasing order.
+// 1.1-2 Rewrite insertion sort procedure to sort into nonincreasing order.
 function nonIncreasingInsertionSort(arr: number[]) {
   for (let j = 1; j <= arr.length - 1; j++) {
     let curr = arr[j];
