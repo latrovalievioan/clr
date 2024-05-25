@@ -1,3 +1,4 @@
+export {};
 // 1.1-1 Insertion sort
 function insertionSort(arr: number[]) {
   for (let j = 1; j <= arr.length - 1; j++) {
@@ -51,3 +52,4 @@ function linearSearch(arr: number[], v: number) {
 }
 
 console.log(linearSearch([5, 2, 4, 6, 1, 3], 100));
+
