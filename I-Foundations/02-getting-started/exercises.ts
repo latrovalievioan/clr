@@ -53,7 +53,7 @@ console.log(sumArray([1,2,3,4,5]))
 
 /*
  * 2.1-3
- * Rewrite the I NSERTION-SORT procedure to sort into monotonically 
+ * Rewrite the INSERTION-SORT procedure to sort into monotonically 
  * decreasing instead of monotonically increasing order.
 */
 
@@ -74,3 +74,28 @@ const insertionSortDecreasing = (xs: number[]) => {
 }
 
 console.log(insertionSortDecreasing([31,41,59,26,41,58]))
+
+/*
+ * 2.1-4
+ * Consider the searching problem:
+ *
+ * Input: A sequence of n numbers (a1,a2,...,an) stored in array A[1:n] and a
+ * value x.
+ *
+ * Output: An index i such that x equals A[i] or the special value NIL if x does not
+ * appear in A.
+ *
+ * Write pseudocode for linear search, which scans through the array from beginning to end, looking for x. 
+ * Using a loop invariant, prove that your algorithm is
+ * correct. Make sure that your loop invariant fulfills the three necessary properties.
+*/
+
+const linearSearch = (xs: number[], x: number) => {
+    let foundAt: number | null = null;
+
+    for(let i = 0; i < xs.length; i++) {
+        foundAt = xs[i] === x ? i : null;
+    }
+
+    return foundAt;
+} 
